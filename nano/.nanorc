@@ -1,0 +1,20 @@
+set nowrap
+set autoindent
+unset backup
+# set boldtext
+set historylog
+# set mouse
+# set noconvert
+set regexp
+set smarthome
+set smooth
+set tabsize 4
+set tabstospaces
+# set fill 100
+
+include "~/.nano/*.nanorc"
+include "/usr/local/opt/nano/share/nano/*.nanorc"
+
+extendsyntax python linter flake8
+
+bind M-F "|black -q -" main
