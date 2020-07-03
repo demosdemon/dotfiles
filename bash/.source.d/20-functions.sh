@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+function isort-black() { isort -rc "$@" && black --line-length 120 "$@"; }
+
 function update-docker-images() {
   for img in $(docker images --format '{{ .Repository }}:{{ .Tag }}' | grep -v -F -e '<none>'); do docker pull "$img"; done
 }
