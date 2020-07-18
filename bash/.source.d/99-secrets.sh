@@ -13,7 +13,7 @@
     fi
 
     export _sops=1
-    exec sops exec-env ~/.env.yaml "$SHELL -l"
+    eval "$(sops --output-type=dotenv -d ~/.env.yaml)"
   fi
 }
 
