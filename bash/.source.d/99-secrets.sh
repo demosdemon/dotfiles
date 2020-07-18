@@ -13,7 +13,7 @@
     fi
 
     export _sops=1
-    exec sops exec-env ~/.env.yaml "$SHELL"
+    exec sops exec-env ~/.env.yaml "$SHELL -l"
   fi
 }
 

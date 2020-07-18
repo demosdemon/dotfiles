@@ -54,12 +54,14 @@ fi
       @prepend-path MANPATH "$BREW_PREFIX/opt/$pkg/$man"
     done
   done
+
+  @prepend-path PATH "$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
 }
 
 [ "$BREW_PREFIX" ] && @import-brew
 unset -f @import-brew
 
-test "$GOPATH" && @prepend-path PATH "$GOPATH/bin"
+@prepend-path PATH "$GOPATH/bin"
 @prepend-path PATH "$HOME"/Library/Python/*/bin
 @prepend-path PATH /opt/perl5/bin
 @prepend-path PATH "$HOME/bin"
