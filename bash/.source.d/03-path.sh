@@ -54,8 +54,6 @@ fi
       @prepend-path MANPATH "$BREW_PREFIX/opt/$pkg/$man"
     done
   done
-
-  @prepend-path PATH "$BREW_PREFIX/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin"
 }
 
 [ "$BREW_PREFIX" ] && @import-brew

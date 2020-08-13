@@ -34,7 +34,6 @@ export PERL5LIB="/opt/perl5/lib/perl5"
 export PERL_MB_OPT='--install_base "/opt/perl5"'
 export PERL_MM_OPT="INSTALL_BASE=/opt/perl5"
 
-
 export MONO_MANAGED_WATCHER=disabled
 
 if [[ $(uname -s) == Darwin ]]; then

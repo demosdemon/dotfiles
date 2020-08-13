@@ -1,9 +1,11 @@
-*
-!.gitignore
-!.vscode/
-!bash/
-!nano/
-!.editorconfig
-!.gitmodules
-!LICENSE
-!README.md
+# Ignore everything
+/*
+
+!/.editorconfig
+!/.gitignore
+!/.gitmodules
+!/.vscode/
+!/bash/
+!/LICENSE
+!/nano/
+!/README.md

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#CHEF.NO.SOURCE
 # shellcheck disable=SC1090,SC1091
 
 # .bash_profile is only sourced when bash is started as an interactive login shell or with `--login`

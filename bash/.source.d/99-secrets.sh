@@ -13,7 +13,7 @@
     fi
 
     export _sops=1
-    eval "$(sops --output-type=dotenv -d ~/.env.yaml)"
+    eval "$(sops --output-type=json -d ~/.env.yaml | jq -r '. as $env | keys | .[] | "\(.)=\($env[.] | @sh); export \(.);"')"
   fi
 }
 
