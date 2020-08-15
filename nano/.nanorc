@@ -13,8 +13,8 @@ set tabstospaces
 # set fill 100
 
 include "~/.nano/*.nanorc"
-include "/usr/local/opt/nano/share/nano/*.nanorc"
 
 extendsyntax python linter flake8
 
-bind M-F "|black -q -" main
+bind M-F "|black -q -
+" main
