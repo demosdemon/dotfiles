@@ -56,3 +56,8 @@ set visible-stats on
 # ~/src/mozillail", but to "cd ~/src/mozilla". (This is supported by the
 # Readline used by Bash 4.)
 set skip-completed-text on
+
+# I should probably document what these do.
+set blink-matching-paren on
+set colored-completion-prefix on
+set enable-bracketed-paste on
