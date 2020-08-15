@@ -59,7 +59,7 @@ fi
 
 function @import() {
   if ! (($#)); then
-    @error "usage: @import <file> [file] [file]..."
+    echo "usage: @import <file> [file] [file]..." >&2
     return 1
   fi
 

@@ -1,9 +1,11 @@
-# Ignore everything
+# Ignore everything in the root directory
 /*
 
+# pls keep sorted
 !/.editorconfig
 !/.gitignore
 !/.gitmodules
+!/.prettierrc
 !/.vscode/
 !/bash/
 !/LICENSE
