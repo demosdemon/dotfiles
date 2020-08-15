@@ -59,7 +59,7 @@ function @export() {
   value=$2
 
   if [ "$value" ]; then
-    eval "$(printf 'export %s=%q' "$target" "$value")"
+    eval "$(printf '%s=%q; export %s' "$target" "$value" "$target")"
   else
     eval "$(printf 'unset %s' "$target")"
   fi
