@@ -2,13 +2,12 @@
 
 @init-secrets() {
   if ! [ "$_sops" ]; then
-    if ! command -v sops > /dev/null 2>&1; then
-      @error "sops not installed, unable to decrypt secrets!"
-      return 1
+    if ! [ -e ~/.env.yaml ]; then
+      return 0
     fi
 
-    if ! [ -e ~/.env.yaml ]; then
-      @error "unable to locate secret file!"
+    if ! command -v sops > /dev/null 2>&1; then
+      @error "sops not installed, unable to decrypt secrets!"
       return 1
     fi
 
