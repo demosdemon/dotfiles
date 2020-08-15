@@ -15,6 +15,3 @@ set tabstospaces
 include "~/.nano/*.nanorc"
 
 extendsyntax python linter flake8
-
-bind M-F "|black -q -
-" main
