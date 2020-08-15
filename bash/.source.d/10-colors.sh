@@ -17,7 +17,7 @@ function @get-color() {
 
   local bash_wrap=n
 
-  if [ "$1" == '-bash' ]; then
+  if [[ "$1" == "-bash" || "$1" == */bash ]]; then
     bash_wrap=y
     shift
   fi
