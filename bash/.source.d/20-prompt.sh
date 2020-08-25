@@ -108,6 +108,11 @@ function @set-prompt() {
     @token
   )
 
+  # something in /etc/bashrc fucks with git prompt
+  if [[ "$HOSTNAME" == *".facebook.com" ]]; then
+    NO_GIT_PROMPT=1
+  fi
+
   if [ -z "${NO_GIT_PROMPT:-}" ]; then
     export GIT_PS1_SHOWDIRTYSTATE=1
     export GIT_PS1_SHOWSTASHSTATE=1
